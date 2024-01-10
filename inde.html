@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Muhammad Ahmed Khan - Web Designer & Front End Developer</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Muhammad Ahmed Khan - Web Designer & Front End Developer" name="description">
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: #343a40;
+            color: #ffffff;
+            width: 280px;
+            padding-top: 20px;
+        }
+
+        .sidebar-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-header img {
+            width: 120px;
+            border-radius: 50%;
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .navbar-toggler {
+            border: none;
+            color: #ffffff;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #007bff;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #007bff;
+        }
+
+        .content {
+            flex: 1;
+            padding: 50px;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+        }
+
+        .typed-text {
+            font-size: 1.8rem;
+            color: #ffffff;
+        }
+
+        .large-btn {
+            background-color: #007bff;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            color: #007bff;
+            padding: 12px 24px;
+            font-size: 1.3rem;
+            border-radius: 5px;
+            margin: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            color: #ffffff;
+        }
+
+        .about {
+            background-color: #ffffff;
+            padding: 80px 0;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            color: #007bff;
+        }
+
+        .about p {
+            font-size: 1.3rem;
+            color: #495057;
+            line-height: 1.8;
+        }
+
+        .education {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .edu-col h3 {
+            font-size: 2.2rem;
+            color: #007bff;
+        }
+
+        .experience {
+            background-color: #ffffff;
+            padding: 80px 0;
+        }
+
+        .exp-col {
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .exp-col span {
+            color: #6c757d;
+            font-size: 1.2rem;
+        }
+
+        .exp-col h3 {
+            font-size: 2rem;
+            margin-top: 10px;
+            color: #007bff;
+        }
+
+        .exp-col h4 {
+            font-size: 1.8rem;
+            color: #343a40;
+        }
+
+        .exp-col h5 {
+            font-size: 1.5rem;
+            color: #495057;
+        }
+
+        .contact {
+            background-color: #007bff;
+            padding: 80px 0;
+            color: #ffffff;
+        }
+
+        .contact-info p {
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+
+        .social a {
+            font-size: 2rem;
+            color: #ffffff;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="prfile.jpg" alt="Profile Image">
+            </div>
+            <div class="sidebar-content">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#header">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#service">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        <div class="content">
+            <!-- Header Start -->
+            <div class="header" id="header">
+                <div class="content-inner">
+                    <p>I'm</p>
+                    <h1>Muhammad Ahmed Khan</h1>
+                    <div class="typed-text">Web Designer, Front End Developer</div>
+                </div>
+            </div>
+            <!-- Header End -->
+
+            <!-- Large Button Start -->
+            <div class="large-btn">
+                <div class="content-inner">
+                    <a class="btn" href="#"><i class="fa fa-hands-helping"></i>Hire Me</a>
+                </div>
+            </div>
+            <!-- Large Button End -->
+
+            <!-- About Start -->
+            <div class="about" id="about">
+                <div class="content-inner">
+                    <div class="content-header">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-lg-5">
+                            <img src="prfile.jpg" alt="About Image">
+                        </div>
+                        <div class="col-md-6 col-lg-7">
+                            <p>
+                                My name is Muhammad Ahmed Khan, born in 2005 in Karachi. I have recently completed my Intermediate from Jinnah Government College in Pre-Engineering and I am currently learning Ai Chatbot from SMIT.
+                            </p>
+                            <a class="btn" href="#">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+
+            <!-- Education Start -->
+            <div class="education" id="education">
+                <div class="content-inner">
+                    <div class="content-header">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="edu-col">
+                                <h3>Matric</h3>
+                                <p>from Board of Secondary Education, Karachi</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="edu-col">
+                                <h3>Intermediate</h3>
+                                <p>from Board of Intermediate Education, Karachi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Education Start -->
+
+            <!-- Experience Start -->
+            <div class="experience" id="experience">
+                <div class="content-inner">
+                    <div class="content-header">
+                        <h2>Experience</h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="exp-col">
+                                <span>From 28-Jan-2020</span>
+                                <h3>Print World</h3>
+                                <h4>Karimabad, Karachi</h4>
+                                <h5>Customer Dealing & Sales Manager</h5>
+                                <p>Dealing with Customers & creating daily sales reports</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Experience Start -->
+
+            <!-- Service Start -->
+
+            <!-- Portfolio Start -->
+
+            <!-- Contact Start -->
+            <div class="contact" id="contact">
+                <div class="content-inner">
+                    <div class="content-header">
+                        <h2 class="ml-5">Contact</h2>
+                    </div>
+                    <div class="row  text-align-center">
+                        <div class="col-12 text-align-center">
+                            <div class="contact-info text-align-center">
+                                <p class="ml-5 pl-5"><i class="fa fa-user"></i>Muhammad Ahmed Khan</p>
+                                <p class="ml-5 pl-5"><i class="fa fa-tag"></i>Web Designer & AI Chatbot</p>
+                                <p class="ml-5 pl-5"><i class="fa fa-envelope"></i>aptechasp2005@gmail.com</p>
+                                <p class="ml-5 pl-5"><i class="fa fa-phone"></i>0336-3454702</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact End -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
